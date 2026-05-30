@@ -35,6 +35,11 @@ hub.smgstation.com {
 memes.smgstation.com {
     reverse_proxy localhost:3069
 }
+
+# Programming Brain
+brain.smgstation.com {
+    reverse_proxy localhost:1001
+}
 ```
 
 Reload Caddy:
