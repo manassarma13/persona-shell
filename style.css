@@ -61,7 +61,9 @@ html {
 
 body {
   font-family: var(--font-sans);
-  background: var(--bg-primary);
+  background-color: var(--bg-primary);
+  background-image: radial-gradient(rgba(255, 255, 255, 0.06) 1.5px, transparent 1.5px);
+  background-size: 24px 24px;
   color: var(--text-primary);
   min-height: 100vh;
   overflow-x: hidden;
