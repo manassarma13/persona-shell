@@ -92,42 +92,56 @@
         </div>
       </a>
 
-      <!-- Tech Meemer -->
-      <a href="https://memes.smgstation.com/" class="project-card" id="card-tech-meemer" target="_blank" rel="noopener">
+      <!-- Tech Meemer (Dormant / Anthropic Paused) -->
+      <a href="https://memes.smgstation.com/" class="project-card service-offline" id="card-tech-meemer" target="_blank" rel="noopener" data-app-name="Tech Meemer SMG" data-app-reason="Anthropic API subscription cancelled due to high token pricing. Autonomous developer joke synthesis and meme generation pipelines are dormant pending local model migration." data-app-url="https://memes.smgstation.com/">
         <div class="card-header">
           <div class="card-icon memes">🔥</div>
-          <div class="card-arrow">↗</div>
+          <div class="card-status-badge offline">
+            <span class="status-dot-amber"></span>
+            <span>Offline</span>
+          </div>
+          <div class="card-arrow suspended">⏸</div>
         </div>
         <h2 class="card-title">Tech Meemer SMG</h2>
+        <div class="service-notice-pill">
+          <span class="pill-icon">⚠️</span>
+          <span>Temporarily Unavailable — Anthropic Subscription Cancelled</span>
+        </div>
         <p class="card-desc">
-          An autonomous system analyzing digital currents. Automatically digests tech news, synthesizes contextual humor
-          using Google Gemini, and publishes nodes to social platforms.
+          An autonomous system analyzing digital currents. Synthesized contextual developer humor and social commentary using Anthropic Claude 3.5. Currently dormant to eliminate costly LLM API fees.
         </p>
         <div class="card-tech">
-          <span class="tech-tag">Node.js</span>
-          <span class="tech-tag">Gemini AI</span>
+          <span class="tech-tag tag-offline">Anthropic Claude (Paused)</span>
           <span class="tech-tag">Imgflip API</span>
           <span class="tech-tag">Automated Cron</span>
+          <span class="tech-tag">Node.js</span>
           <span class="tech-tag">SQLite</span>
         </div>
       </a>
 
-      <!-- SMG Idea Engine -->
-      <a href="https://ideas.smgstation.com/" class="project-card" id="card-idea-engine" target="_blank" rel="noopener">
+      <!-- SMG Idea Engine (Dormant / Anthropic Paused) -->
+      <a href="https://ideas.smgstation.com/" class="project-card service-offline" id="card-idea-engine" target="_blank" rel="noopener" data-app-name="SMG Idea Engine" data-app-reason="Anthropic API subscription discontinued to eliminate recurring cloud compute costs. Real-time distributed architecture brainstorming and Clash Arena simulations are paused." data-app-url="https://ideas.smgstation.com/">
         <div class="card-header">
           <div class="card-icon ideas">🧠</div>
-          <div class="card-arrow">↗</div>
+          <div class="card-status-badge offline">
+            <span class="status-dot-amber"></span>
+            <span>Offline</span>
+          </div>
+          <div class="card-arrow suspended">⏸</div>
         </div>
         <h2 class="card-title">SMG Idea Engine</h2>
+        <div class="service-notice-pill">
+          <span class="pill-icon">⚠️</span>
+          <span>Temporarily Unavailable — Anthropic Subscription Cancelled</span>
+        </div>
         <p class="card-desc">
-          A visionary AI brainstorming node. Generates cutting-edge, futuristic architecture ideas and simulates
-          hyper-analytical "Who Would Win" matchups using the Groq SDK and LLaMA models.
+          A visionary AI brainstorming node. Generates experimental architecture blueprints and simulates hyper-analytical "Who Would Win" matchups. Powered by Claude 3.5 Sonnet, now paused following cost-optimization.
         </p>
         <div class="card-tech">
-          <span class="tech-tag">Node.js</span>
+          <span class="tech-tag tag-offline">Anthropic Claude (Paused)</span>
+          <span class="tech-tag">Architecture Engine</span>
           <span class="tech-tag">Express</span>
-          <span class="tech-tag">Groq SDK</span>
-          <span class="tech-tag">LLaMA 3</span>
+          <span class="tech-tag">Node.js</span>
         </div>
       </a>
 
@@ -161,14 +175,14 @@
         </div>
         <h2 class="card-title">Trade Boy</h2>
         <p class="card-desc">
-          An AI-powered quantitative swing trading scanner. Leverages Anthropic Claude to analyze market data, technical
-          indicators, and momentum to generate high-conviction trade setups.
+          An algorithmic quantitative swing trading scanner. Uses a deterministic 10-Star Alpha Scoring model, 5 technical filter pillars, and ATR trailing stops to identify high-probability swing trade setups.
         </p>
         <div class="card-tech">
           <span class="tech-tag">Node.js</span>
-          <span class="tech-tag">Claude AI</span>
-          <span class="tech-tag">MongoDB</span>
+          <span class="tech-tag">10-Star Quant Model</span>
+          <span class="tech-tag">Technical Analysis</span>
           <span class="tech-tag">Kite API</span>
+          <span class="tech-tag">MongoDB</span>
         </div>
       </a>
 
@@ -204,6 +218,46 @@
 
   </div>
 
+  <!-- Service Suspension Telemetry Modal -->
+  <div class="service-modal-backdrop" id="suspensionModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="service-modal">
+      <div class="modal-header-tag">
+        <span class="status-dot-amber"></span>
+        <span>Telemetry Alert • Cognitive Service Offline</span>
+      </div>
+      <h3 class="modal-title" id="modalTitle">Node Temporarily Dormant</h3>
+      <p class="modal-desc" id="modalDesc">
+        Upstream Anthropic API subscription has been discontinued due to steep compute costs. Real-time generation pipelines are dormant pending migration to local open-weights.
+      </p>
+
+      <div class="modal-telemetry-box">
+        <div class="telemetry-row">
+          <span class="telemetry-label">Upstream Provider</span>
+          <span class="telemetry-val offline">Anthropic Claude (Paused)</span>
+        </div>
+        <div class="telemetry-row">
+          <span class="telemetry-label">Trigger Reason</span>
+          <span class="telemetry-val reason">Subscription Cancelled (Cost Control)</span>
+        </div>
+        <div class="telemetry-row">
+          <span class="telemetry-label">Architecture Action</span>
+          <span class="telemetry-val target">Pending Open-Weight Migration</span>
+        </div>
+        <div class="telemetry-row">
+          <span class="telemetry-label">Target Service</span>
+          <span class="telemetry-val" id="modalAppName">Tech Meemer SMG</span>
+        </div>
+      </div>
+
+      <div class="modal-actions">
+        <button class="modal-btn modal-btn-secondary" id="modalCloseBtn">Dismiss</button>
+        <a href="#" class="modal-btn modal-btn-primary" id="modalProceedBtn" target="_blank" rel="noopener">
+          Visit Dormant App ↗
+        </a>
+      </div>
+    </div>
+  </div>
+
   <script>
     // Tilt effect on project cards
     document.querySelectorAll('.project-card').forEach(card => {
@@ -221,6 +275,46 @@
       card.addEventListener('mouseleave', () => {
         card.style.transform = 'translateY(0) perspective(1000px) rotateX(0) rotateY(0)';
       });
+    });
+
+    // Offline Service Modal Handler
+    const modal = document.getElementById('suspensionModal');
+    const modalTitle = document.getElementById('modalTitle');
+    const modalDesc = document.getElementById('modalDesc');
+    const modalAppName = document.getElementById('modalAppName');
+    const modalProceedBtn = document.getElementById('modalProceedBtn');
+    const modalCloseBtn = document.getElementById('modalCloseBtn');
+
+    document.querySelectorAll('.project-card.service-offline').forEach(card => {
+      card.addEventListener('click', e => {
+        e.preventDefault();
+        const appName = card.dataset.appName || 'Cognitive Node';
+        const appReason = card.dataset.appReason || 'Anthropic API subscription cancelled due to compute costs.';
+        const appUrl = card.dataset.appUrl || card.getAttribute('href');
+
+        modalTitle.textContent = `${appName} is Offline`;
+        modalDesc.textContent = appReason;
+        modalAppName.textContent = appName;
+        modalProceedBtn.href = appUrl;
+
+        modal.classList.add('open');
+      });
+    });
+
+    function closeModal() {
+      modal.classList.remove('open');
+    }
+
+    if (modalCloseBtn) modalCloseBtn.addEventListener('click', closeModal);
+    if (modal) {
+      modal.addEventListener('click', e => {
+        if (e.target === modal) closeModal();
+      });
+    }
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape' && modal.classList.contains('open')) {
+        closeModal();
+      }
     });
   </script>
 </body>
