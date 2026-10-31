@@ -641,6 +641,7 @@ body::after {
 .footer {
   text-align: center;
   padding: 2.5rem 0 1.5rem;
+  margin-top: auto;
   animation: fadeSlideUp 0.7s ease-out 0.65s both;
   width: 100%;
 }
@@ -668,6 +669,7 @@ body::after {
   border-radius: 100px;
   background: var(--bg-card);
   border: 1px solid var(--border-subtle);
+  white-space: nowrap;
 }
 
 .footer-link:hover {
@@ -678,13 +680,17 @@ body::after {
 }
 
 .footer-link svg {
-  opacity: 0.75;
+  opacity: 0.85;
   transition: var(--transition-fast);
   flex-shrink: 0;
 }
 
 .footer-link:hover svg {
   opacity: 1;
+}
+
+.footer-link.coffee svg {
+  color: #ffdd00;
 }
 
 .footer-link.coffee:hover {
