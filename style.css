@@ -143,6 +143,42 @@ body::after {
   background-clip: text;
 }
 
+.topbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.topbar-coffee-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  text-decoration: none;
+  padding: 0.35rem 0.8rem;
+  border-radius: 100px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  transition: var(--transition-fast);
+}
+
+.topbar-coffee-btn:hover {
+  color: #ffdd00;
+  border-color: rgba(255, 221, 0, 0.4);
+  background: rgba(255, 221, 0, 0.08);
+  box-shadow: 0 0 16px rgba(255, 221, 0, 0.15);
+  transform: translateY(-1px);
+}
+
+.topbar-coffee-btn svg {
+  color: #ffdd00;
+  transition: var(--transition-fast);
+  flex-shrink: 0;
+}
+
 .topbar-status {
   display: flex;
   align-items: center;
@@ -604,9 +640,61 @@ body::after {
 /* --- Footer --- */
 .footer {
   text-align: center;
-  padding: 2rem 0 1rem;
+  padding: 2.5rem 0 1.5rem;
   animation: fadeSlideUp 0.7s ease-out 0.65s both;
   width: 100%;
+}
+
+.footer-links {
+  display: flex;
+  gap: 1.25rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+.footer-link {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: var(--transition-fast);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-family: var(--font-mono);
+  padding: 0.35rem 0.85rem;
+  border-radius: 100px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+}
+
+.footer-link:hover {
+  color: var(--text-primary);
+  border-color: var(--border-glow);
+  background: var(--accent-glow-1);
+  transform: translateY(-1px);
+}
+
+.footer-link svg {
+  opacity: 0.75;
+  transition: var(--transition-fast);
+  flex-shrink: 0;
+}
+
+.footer-link:hover svg {
+  opacity: 1;
+}
+
+.footer-link.coffee:hover {
+  color: #ffdd00;
+  border-color: rgba(255, 221, 0, 0.4);
+  background: rgba(255, 221, 0, 0.08);
+}
+
+.footer-link.coffee:hover svg {
+  color: #ffdd00;
 }
 
 .footer-copy {
@@ -680,13 +768,25 @@ body::after {
     font-size: 1.8rem;
   }
 
-  .contact-row {
-    gap: 0.45rem;
+  .topbar-actions {
+    gap: 0.6rem;
   }
 
-  .contact-link {
-    font-size: 0.72rem;
-    padding: 0.35rem 0.75rem;
+  .topbar-coffee-btn span {
+    display: none;
+  }
+
+  .topbar-coffee-btn {
+    padding: 0.35rem 0.55rem;
+  }
+
+  .footer-links {
+    gap: 0.6rem;
+  }
+
+  .footer-link {
+    font-size: 0.75rem;
+    padding: 0.3rem 0.7rem;
   }
 
   .card-header {
